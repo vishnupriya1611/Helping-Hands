@@ -1,0 +1,30 @@
+<ul class="nav nav-pills nav-justified py-0 m-0 p-0 ">
+    <li class="nav-item">
+      <a class="nav-link " href="home.php">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Education</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="edu_inst.php">Institution</a>
+      <a class="dropdown-item" href="scholarship.php">Scholarship</a>
+    </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sports</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="sports_academy.php">Academy</a>
+      <a class="dropdown-item" href="sponsers.php">Sponsers</a>
+    </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="post.php">Post</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="loginpage.php">
+	  <?php
+	  if(isset($_SESSION['login']))echo "logout";
+	  else echo "login/register";
+	  ?>
+	  </a>
+    </li>
+  </ul>
